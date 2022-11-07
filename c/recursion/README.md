@@ -12,7 +12,7 @@ execution.
 # Projects
 
 Factorial of a number:
-
+```
 Benchmark 1: ./factorial
   Time (mean ± σ):       0.4 ms ±   1.0 ms    [User: 0.2 ms, System: 0.3 ms]
   Range (min … max):     0.0 ms …   9.1 ms    1125 runs
@@ -22,3 +22,4 @@ Benchmark 2: ./tail_factorial
 Summary
   './tail_factorial' ran
     1.23 ± 4.59 times faster than './factorial'
+```
