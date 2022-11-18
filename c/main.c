@@ -2,6 +2,7 @@
 
 /* Header files */
 #include <stdio.h>
+#include <stdlib.h>
 #include <limits.h>
 #include <math.h>
 
@@ -65,6 +66,9 @@ main(void)
 	hash_t *ht = new_hash();
 	delhi(ht);
 	
+	// Qsort
+	int arr[] = { 5, 1, 8, 4, 10, 3 };
+	sort(arr);
 	return (0);
 }
 
@@ -93,4 +97,23 @@ dec2bin(unsigned int n)
 {
 	if (n >> 1) dec2bin(n >> 1);
 	putchar((n & 1) ? '1' : '0');
+}
+
+// Sort in ascending order
+
+int
+compare_asc(const void * a, const void * b)
+{
+  return (*(int *) a - *(int *) b);
+}
+  
+int
+sort(int arr[])
+{
+  int n = sizeof(arr)/sizeof(arr[0]), i;
+  
+  qsort (arr, n, sizeof(arr[0]), compare_asc);
+  for (i = 0; i < n; i++)
+     printf("%d ", arr[i]);
+  return 0;
 }
