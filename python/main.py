@@ -46,9 +46,14 @@ fav_num = 1618
 fav_num_message = f"My favourite number is {fav_num}"
 print(fav_num_message)
 
+# lists 
+
 portugese_words = ["cachorro", "gato", "pao", "cerveja"]
 print(portugese_words[0], portugese_words[1], portugese_words[2], portugese_words[3])
 print(f"The Portugese word of the day is: {portugese_words[0]}")
 print(f"The Portugese word of the day is: {portugese_words[1]}")
 print(f"The Portugese word of the day is: {portugese_words[2]}")
 print(f"The Portugese word of the day is: {portugese_words[3]}")
+
+portugese_words[0] = "chave"
+print(portugese_words)
